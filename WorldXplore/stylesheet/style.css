@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Raleway:wght@500&family=Ubuntu:ital@0;1&display=swap');
+
+#logo {
+    width: 90px;
+    transition: 1s;
+}
+
+#logo:hover {
+    width: 97px;
+}
+
+#logo:hover .st0 {
+    fill: #047b58;
+
+}
+
+#logo:hover .st1 {
+    fill: #ffffff;
+}
+
+.main-menu {
+    float: right;
+    text-decoration: none;
+}
+
+.bgVid {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.gradient {
+    background-image: linear-gradient(white, white, transparent, transparent, transparent, transparent, transparent, transparent, black, black, black);
+    width: 100%;
+    height: 150vh;
+    position: fixed;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: -100px;
+    top: 0;
+}
+
+body {
+    padding: 1%;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+.left,
+.right,
+.center {
+    float: left;
+    width: 31%;
+    color: white;
+    padding: 10px;
+    height: 350px;
+    text-align: center;
+    background-color: #0ad498ab;
+    border: 10px solid rgba(207, 233, 255, 0.434);
+    transition: 1s all ease-in-out;
+
+
+}
+
+.contactBox {
+    justify-content: center;
+    align-items: center;
+    height: 370px;
+    background-color: rgba(207, 233, 255, 0.792);
+    width: 600px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 5px 5px 2.5px 2.5px rgba(0, 0, 0, 0.491);
+    margin-bottom: -15px;
+    margin-top: -10px;
+
+}
+
+
+.container:after {
+    clear: both;
+}
+
+nav {
+    font-size: large;
+}
+
+section {
+    float: right;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+    width: 250px;
+    box-shadow: 5px 5px 3px rgba(207, 233, 255, 0.434);
+    transition: 0.3s all ease-in-out;
+
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.cruiseBox img:hover {
+    filter: grayscale(100%);
+}
+
+h1 {
+    text-shadow: 2px 2px #3452A4;
+    text-align: center;
+}
+
+#title {
+    text-shadow: 2px 2px white;
+    color: #3452A4;
+}
+
+
+#world {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 50pt;
+    font-size: larger;
+    color: rgba(10, 212, 152, 0.669);
+}
+
+
+a,
+.dropBtn {
+    text-decoration: none;
+    text-shadow: #3452A4;
+    transition: 0.2s ease-in-out;
+    text-underline-offset: 0.1em;
+
+}
+
+.dropBtn {
+    background-color: #00000000;
+    border: none;
+    font-size: large;
+}
+
+a:link,
+.dropBtn {
+    color: #3452A4;
+}
+
+/* visited link */
+a:visited,
+.dropBtn {
+    color: rgb(4, 98, 4);
+}
+
+/* mouse over link */
+a:hover,
+.dropBtn:hover,
+.dropdown:hover .dropBtn,
+#active {
+    color: black;
+    font-size: 14.5pt;
+    font-weight: bold;
+    text-decoration: underline 0.15rem white;
+
+}
+
+footer {
+    margin-top: 320px;
+    color: rgba(207, 233, 255, 0.945);
+    margin: 50px
+}
+
+footer a:link {
+    color: rgba(207, 233, 255, 0.945);
+}
+
+footer p:first-child {
+    float: left;
+    margin-left: -12px;
+}
+
+footer p:last-child {
+    float: right;
+    word-spacing: 10px;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.button {
+    border-radius: 8px;
+    padding: 10px;
+    width: 140px;
+    border: 2px solid rgba(250, 233, 45, 0.916);
+    box-shadow: 5px 5px 2px #3452A4;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #2b4486;
+    transition: ease-in-out 0.08s;
+    margin-bottom: 15px;
+
+}
+
+.button:hover {
+    background-color: #3452A4;
+    transform: scale(1.03);
+    color: rgba(255, 247, 163, 0.916);
+    border: 2px solid rgba(250, 233, 45, 0.916);
+    box-shadow: 5px 5px 2px rgba(255, 247, 163, 0.916);
+}
+
+.dropdown {
+    position: relative;
+    display: inline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffffe9;
+    min-width: 410px;
+    box-shadow: 0px 8px 16px 0px rgba(119, 38, 38, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 0px 30px 0px 30px;
+    margin-left: 70px;
+}
+
+.dropdown-content a {
+    margin-right: 20px;
+}
+
+.dropdown-content a:hover {
+    font-size: large;
+    text-decoration: none;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+input,
+textarea {
+    border: 2px solid #00000074;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 2.3px 2.3px 2.5px #00000074;
+    background-color: aliceblue;
+}
+
+textarea {
+    height: 150px;
+    width: 450px;
+}
+
+.secBtn {
+    width: 150px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #00d4ff, transparent) #3f51b5;
+    transition: 0.7s;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border: 2px solid #5e5e5e;
+}
+
+.secBtn:hover {
+    background-color: #08f1abe5;
+    transform: scale(102%);
+}
+
+.cruiseBox-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.cruiseBox {
+    margin-left: 125px;
+    margin-bottom: 45px;
+    width: 1000px;
+    height: 200px;
+    background-color: #0ad497cf;
+}
+
+.cruiseBox img {
+    width: 300px;
+    height: 200px;
+    box-shadow: none;
+}
+
+.cruiseBody {
+    margin-left: 30px;
+}
+
+.card-text {
+    width: 500px;
+}
+
+.cruiseBox input[type=button] {
+    margin-left: 190px;
+}
+
+.cruisePrice {
+    margin-top: -150px;
+    margin-left: 550px;
+    font-size: small;
+    text-align: center;
+}
+
+input[type=text]:focus, textarea:focus {
+    background-color: lightblue;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #15203e;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3452A4;
+    ;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1e2e5a;
+    ;
+}
