@@ -4,14 +4,12 @@
     <title>World Xplore</title>
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         #title {
             color: #fff36e;
             text-shadow: 2.3px 2.3px #5480fa;
-        }
-
-        body {
-            background: linear-gradient(rgba(10, 212, 152, 1) 60%, #00d4ff 100%);
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -19,21 +17,24 @@
 <body>
 
     <header>
-        <nav class="main-menu">
-            <a href="index.html">Home</a> |
+        <nav class="main-menu" id="myNav">
+            <a href="index.html">Home </a>
             <div class="dropdown">
                 <button class="dropBtn" id="dropBtn">Package Tours&nbsp;
                     <i class="fa fa-caret-down"></i>
-                </button> |
+                </button>
                 <div class="dropdown-content">
                     <a href="#single">Single Pack</a>
                     <a href="#double">Double Pack</a>
                     <a href="#fam">Family Pack</a>
                 </div>
             </div>
-            <a href="#rediscover">Rediscover Singapore</a> |
-            <a href="cruises.html" id="active">Cruises</a> |
+            <a href="#rediscover">Rediscover Singapore </a>
+            <a href="cruises.html" id="active">Cruises </a>
             <a href="contact.html">Contact Us</a>
+            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
 
         <div id="logo">
@@ -112,90 +113,119 @@
         </video>
     </div>
 
-    <div class="cruiseBox">
-        <div class="cruiseBox-horizontal">
-            <div class="cruiseImg">
-                <img src="images/thailand.jpeg" alt="thailand">
+    <div class="bgImg">
+        <div class="gradient"></div>
+        <img src="images/cruisesImg.png" alt="Cruise">
+    </div>
+
+    <div align="center">
+        <div class="cruiseBox">
+            <div class="cruiseBox-horizontal">
+                <div class="cruiseImg">
+                    <img src="images/thailand.jpeg" alt="thailand">
+                </div>
+                <div class="cruiseBody">
+                    <h2 class="card-title">Thailand <span style="font-size: medium; color:rgb(4, 98, 4);">[4
+                            Nights]</span></h2>
+
+                    <p class="card-text">
+                        It is known for its beautiful nature, delicious mangoes and strict rules about conversations
+                        on its
+                        monarchy.
+                    </p>
+                    <div class="cruisePrice">
+                        <h2>$304<br>/person</h2>
+                    </div>
+                    <input type="button" value="Book a ticket" class="secBtn">
+
+
+                </div>
             </div>
-            <div class="cruiseBody">
-                <h2 class="card-title">Thailand <span style="font-size: medium; color:rgb(4, 98, 4);">[4 Nights]</span></h2>
-                <p class="card-text">
-                    It is known for its beautiful nature, delicious mangoes and strict rules about conversations
-                    on its
-                    monarchy.
-                </p>
-                <input type="button" value="Book a ticket" class="secBtn">
-                <div class="cruisePrice">
-                    <h2>$304<br>/person</h2>
+        </div>
+
+        <div class="cruiseBox">
+            <div class="cruiseBox-horizontal">
+                <div class="cruiseImg">
+                    <img src="images/hawaii.jpeg" alt="hawaii">
+                </div>
+                <div class="cruiseBody">
+                    <h2 class="card-title">Hawaii <span style="font-size: medium; color:rgb(4, 98, 4);">[9
+                            Nights]</span></h2>
+                    <p class="card-text">
+                        Enjoy the beautiful scenery and clearbeach waters. Look forward to
+                        delicious food and a
+                        laid
+                        back experience.
+                    </p>
+                    <div class="cruisePrice">
+                        <h2>$1,106<br>/person</h2>
+                    </div>
+                    <input type="button" value="Book a ticket" class="secBtn">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cruiseBox">
+            <div class="cruiseBox-horizontal">
+                <div class="cruiseImg">
+                    <img src="images/italy.jpeg" alt="italy">
+                </div>
+                <div class="cruiseBody">
+                    <h2 class="card-title">Italy <span style="font-size: medium; color:rgb(4, 98, 4);">[3 Nights]</span>
+                    </h2>
+                    <p class="card-text">
+                        Famous for its tourism, its art cities and unique scenery. Italy is also known for its language,
+                        opera, fashion and luxury brands.
+                    </p>
+                    <div class="cruisePrice">
+                        <h2>$455<br>/person</h2>
+                    </div>
+                    <input type="button" value="Book a ticket" class="secBtn">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cruiseBox">
+            <div class="cruiseBox-horizontal">
+                <div class="cruiseImg">
+                    <img src="images/newZ.jpeg" alt="new zealand">
+                </div>
+                <div class="cruiseBody">
+                    <h2 class="card-title">New Zealand <span style="font-size: medium; color:rgb(4, 98, 4);">[5
+                            Nights]</span></h2>
+                    <p class="card-text">
+                        New Zealand is famous
+                        for its national rugby team, its indigenous Maori culture and its picturesque landscape.
+                    </p>
+                    <div class="cruisePrice">
+                        <h2>$560<br>/person</h2>
+                    </div>
+                    <input type="button" value="Book a ticket" class="secBtn">
+
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="cruiseBox">
-        <div class="cruiseBox-horizontal">
-            <div class="cruiseImg">
-                <img src="images/hawaii.jpeg" alt="hawaii">
-            </div>
-            <div class="cruiseBody">
-                <h2 class="card-title">Hawaii <span style="font-size: medium; color:rgb(4, 98, 4);">[9 Nights]</span></h2>
-                <p class="card-text">
-                    Enjoy the beautiful scenery and clearbeach waters. Look forward to
-                    delicious food and a
-                    laid
-                    back experience.
-                </p>
-                <input type="button" value="Book a ticket" class="secBtn">
-                <div class="cruisePrice">
-                    <h2>$1,106<br>/person</h2>
-                </div>
-            </div>
-        </div>
+    <div align="center">
+        <footer>
+            <p>&#169;2022 World Xplore. All Rights Reserved.</p>
+            <p><a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">Feedback</a> <a href="#">Support</a></p>
+        </footer>
     </div>
-
-    <div class="cruiseBox">
-        <div class="cruiseBox-horizontal">
-            <div class="cruiseImg">
-                <img src="images/italy.jpeg" alt="italy">
-            </div>
-            <div class="cruiseBody">
-                <h2 class="card-title">Italy <span style="font-size: medium; color:rgb(4, 98, 4);">[3 Nights]</span></h2>
-                <p class="card-text">
-                    Famous for its tourism, its art cities and unique scenery. Italy is also known for its language,
-                    its opera, its fashion and its luxury brands
-                </p>
-                <input type="button" value="Book a ticket" class="secBtn">
-                <div class="cruisePrice">
-                    <h2>$455<br>/person</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="cruiseBox">
-        <div class="cruiseBox-horizontal">
-            <div class="cruiseImg">
-                <img src="images/newZ.jpeg" alt="new zealand">
-            </div>
-            <div class="cruiseBody">
-                <h2 class="card-title">New Zealand <span style="font-size: medium; color:rgb(4, 98, 4);">[5 Nights]</span></h2>
-                <p class="card-text">
-                    New Zealand is famous
-                    for its national rugby team, its indigenous Maori culture and its picturesque landscape.
-                </p>
-                <input type="button" value="Book a ticket" class="secBtn">
-                <div class="cruisePrice">
-                    <h2>$560<br>/person</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>&#169;2022 World Xplore. All Rights Reserved.</p>
-        <p><a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">Feedback</a> <a href="#">Support</a></p>
-    </footer>
-
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNav");
+            if (x.className === "main-menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "main-menu";
+            }
+        }
+    </script>
 </body>
 
 </html>
