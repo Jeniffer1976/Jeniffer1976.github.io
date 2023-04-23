@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portfolio | Jeniffer Joyce</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/42cd4a50f5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="stylesheet/style.css">
+
+</head>
+
+<body>
+    <nav id="navbar" class="sidenav">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <img src="images/logo.png" alt="Logo" id="logo">
+        <!-- <a href="#" id="home"><span class="fas fa-home"></span><span>Home</span></a> -->
+        <div style="position:fixed; right:0; top:0;">
+            <a href="index.html" id="home" class="navList">
+                <h5><i class="fas fa-home"></i>&nbsp;&nbsp; Home</h5>
+            </a>
+            <a href="about.html" id="about" class="navList">
+                <h5><i class="fas fa-user-circle"></i>&nbsp;&nbsp; About</h5>
+            </a>
+            <a href="portfolio.html" id="portfolio" class="navList active">
+                <h5><i class="fas fa-suitcase"></i>&nbsp;&nbsp; Portfolio</h5>
+            </a>
+            <a href="contact.html" id="contact" class="navList">
+                <h5><i class="fas fa-phone"></i>&nbsp;&nbsp; Contact</h5>
+            </a>
+        </div>
+    </nav>
+
+    <h2 class="primary-text" align="center">My works</h2>
+    <br><br>
+    <div class="portNav">
+        <button type="button" id="wdNav" class="btn rounded-pill pt-2">
+            <h6>Web Development</h6>
+        </button>
+        <button type="button" id="psNav" class="btn rounded-pill pt-2">
+            <h6>Photoshop & Illustration</h6>
+        </button>
+        <button type="button" id="mbNav" class="btn rounded-pill pt-2">
+            <h6>Mobile App Development</h6>
+        </button>
+    </div>
+
+
+    <br><br><br>
+
+    <!-- Web Dev -->
+    <div class="container-fluid divider" id="wdDiv">
+        <h5>Web Development</h5>
+    </div>
+
+    <!-- <div id="wd"></div> -->
+    <div class="webDev">
+        <div class="container">
+            <input type="radio" name="webSlider" id="item-1" checked>
+            <input type="radio" name="webSlider" id="item-2">
+            <input type="radio" name="webSlider" id="item-3">
+            <br><br>
+            <div class="cards">
+         
+                <label class="card" for="item-1" id="web-1">
+                    <!-- <img src="images/web/web2.png" alt="World Xplore"> -->
+                    <video loop muted autoplay controls>
+                        <source src="videos/World_Xplore.mp4" type="video/mp4" >
+                    </video>
+                    <div class="info">
+                        <br>
+                        <h4>What is it about?</h4>
+                        <p>
+                            I created a website that implemented <span class="highlight">responsive web designs</span>
+                            so that it would
+                            be appealing to view on may different platforms.<br><br>
+
+                            Features included:
+                        <ul>
+                            <li><span class="highlight">Responsive</span> Design</li>
+
+                            <li>
+                                Background video changes into image in smaller devices to allow <span
+                                    class="highlight">greater user experience</span>
+                            </li>
+
+                            <li>Hover <span class="highlight">animation</span> on logo</li>
+                        </ul>
+                        </p>
+
+                    </div>
+
+                </label>
+
+                <label class="card" for="item-2" id="web-2">
+                    <!-- <img src="images/web/web1.png" alt="Hotel Reviews"> -->
+                    <video loop muted >
+                        <source src="videos/Hotel_Review.mp4" type="video/mp4" >
+                    </video>
+                    <div class="info">
+                        <br>
+                        <h4>What is it about?</h4>
+                        <p>
+                            I created a working Hotel Reviews website using <span class="highlight">PHP</span> that
+                            <span class="highlight">stores</span>
+                            and <span class="highlight">retrieves</span> data from a database server. <br><br>
+
+                            Features included: 
+                        <ul>
+                            <li>Browse through a list of hotels</li>
+                            <li>Add/edit/delete reviews</li>
+                            <li>Create and login to an account (Uses hashed passwords)</li>
+                            <li>Using the search bar</li>
+                        </ul>
+
+                        </p>
+                    </div>
+                </label>
+                <label class="card" for="item-3" id="web-3">
+                    <!-- <img src="images/web/web3.png" alt="Exercise Tracker"> -->
+                    <video loop muted>
+                        <source src="videos/Exercise_Tracker.mp4" type="video/mp4">
+                    </video>
+                    <div class="info">
+                        <br>
+                        <h4>What is it about?</h4>
+                        <p>
+                            An exercise tracking application that was created to let users track their
+                            progress for various different levels.<br><br>
+
+                            How it works:
+                        <ul>
+                            <li>
+                                User logs in and selects a level
+                            </li>
+                            <li>
+                                Minimun weekly requirement is shown and user inputs their weekly progress
+                            </li>
+                            <li>
+                                Application calculates if the user met the weekly requirement and allows user to
+                                progress to next level
+                            </li>
+                        </ul>
+
+                        </p>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- Photoshop -->
+    <div class="container-fluid divider" id="psDiv">
+        <h5>Photoshop & Illustration</h5>
+    </div>
+
+    <!-- <div id="ps"></div> -->
+    <div class="photoshop">
+        <div class="container">
+            <input type="radio" name="PSslider" id="item-4" checked>
+            <input type="radio" name="PSslider" id="item-5">
+            <input type="radio" name="PSslider" id="item-6">
+            <br><br>
+            <div class="cards">
+                <label class="card" for="item-4" id="ps-1">
+
+                    <!-- <div class="row" id="castleOnIce">
+                        <div class="col-3">
+                            <img src="images/ps/castle.jpg" alt="Castle">
+                        </div>
+                        <div class="col-6">
+                            <img src="images/ps/castleOnIce.png" alt="Castle on Ice">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/ps/ice.jpg" alt="Ice">
+                        </div>
+                    </div> -->
+
+                    <img src="images/ps/castleOnIceCollage.png" alt="Castle on Ice" id="castleOnIce">
+                    <div class="info">
+                        <br>
+                        <h4>What is it about?</h4>
+                        <p>
+                            We were challenged to combine these two pictures as seamless as
+                            possible and were allowed to add our own twists to the final
+                            product. <br><br>
+
+                            Adjustments I made:
+                            <ul>
+                                <li>Layer masking</li>
+                                <li>Adding reflection</li>
+                                <li>Adding snow and filters to change the weather</li>
+                                <li>Removing the background</li>
+                            </ul>
+
+                            <a href="images/ps/castleOnIceZoomed.png" target="_blank"
+                                style="margin-left: 10vw; color: #28d7b1;">Take a closer look at the pictures <i
+                                    class="far fa-image"></i></a>
+                        </p>
+                    </div>
+                </label>
+                <label class="card" for="item-5" id="ps-2">
+                    <div class="row" id="castleOnIce">
+                        <div class="col-3">
+                        </div>
+                        <div class="col-6">
+                            <img src="images/ps/fontHistory.png" alt="Font History" style="width:300px">
+                        </div>
+                        <div class="col-3">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <br>
+                        <h4>What is it about?</h4>
+                        <p>
+                            We were tasked to create a poster that depicts the history of a font that we choose to
+                            elaborate
+                            on. I chose to show the history of the font "Vincent Connare Trebuchet" since I found the
+                            history
+                            of the font to be quite interesting. <br><br>
+
+                            I managed to incorporate an illustration of a trebuchet in the poster so that it maintains a
+                            fun
+                            aspect whilst showing people about the history of the font.
+                        </p>
+
+                    </div>
+
+                </label>
+                <label class="card" for="item-6" id="ps-3">
+                    <div class="row" id="castleOnIce">
+                        <div class="col-3">
+                        </div>
+                        <div class="col-6">
+                            <img src="images/ps/mobile_portfolio.png" alt="Mobile Portfolio" style="width:300px">
+                        </div>
+                        <div class="col-3">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <br>
+                        <h4>What is it about?</h4>
+                        <p>
+                            A Mobile Portfolio created using Adobe XD displaying the works that I had created in the past<br><br>
+
+                            Feel free to take a look at my thoughts behind this design created.
+                            <video width="550px" loop muted autoplay controls style="border:none; border-radius:0%">
+                                <source src="videos/Mobile Portfolio Application Design Plan.mp4" type="video/mp4">
+                            </video>
+                        </p>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br>
+
+    <!-- Mobile Dev -->
+    <div class="container-fluid divider" id="mbDiv">
+        <h5>Mobile Development</h5>
+    </div>
+
+    <div class="mobDev">
+        <div class="container">
+            <input type="radio" name="MBslider" id="item-7" checked>
+            <input type="radio" name="MBslider" id="item-8">
+            <input type="radio" name="MBslider" id="item-9">
+            <br><br>
+            <div class="cards">
+                <label class="card" for="item-7" id="mb-1">
+                    <img src="images/mb/mb1.png" alt="Movies Application">
+                    <div class="info">
+                        <br>
+                        <h4>What is it about?</h4>
+                        <p>
+
+                            I created a Movies Application using <span class="highlight">Android Studio</span>that
+                            allows
+                            the user to enter movies that will then get stored into a <span class="highlight">SQLite
+                                Database</span>. <br><br>
+
+                            Features implemented: <br>
+                            - Usage of SQLite to store data <br>
+                            - Filter by rating <br>
+                            - Dialog box to confirm update/delete
+                        </p>
+                    </div>
+                </label>
+                <label class="card" for="item-8" id="mb-2">
+                    <img src="images/web/web2.png" alt="World Xplore">
+                    <div class="info">
+                        <br>
+                        <h4>What is it about?</h4>
+                        <p>
+                            We were challenged to combine these two pictures as seamless as
+                            possible and were allowed to add our own twists to the final
+                            product.<br><br>
+
+                            Adjustments I made:<br>
+                            - Layer masking<br>
+                            - Adding reflection<br>
+                            - Adding snow and filters to change the weather<br>
+                            - Removing the background<br>
+                        </p>
+
+                    </div>
+
+                </label>
+                <label class="card" for="item-9" id="mb-3">
+                    <img src="images/web/web3.png" alt="Exercise Tracker">
+                    <div class="info">
+                        <br>
+                        <h4>What is it about?</h4>
+                        <p>
+                            I created a working Hotel Reviews website using PHP that stores
+                            and retrieves data from a database server.<br><br>
+
+                            Features included:<br>
+                            - Browse through a list of hotels<br>
+                            - Add/edit/delete reviews<br>
+                            - Create and login to an account (Uses hashed passwords)<br>
+                            - Using the search bar
+                        </p>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
