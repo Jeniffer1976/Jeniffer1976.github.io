@@ -44,8 +44,8 @@ function resetForm() {
 
 function vidControls(section) {
     $('[type="radio"][name="'+section+'"]').click(function() {
-        document.querySelectorAll('label > video').forEach(vid => vid.pause()); // pauses all videos
-        document.querySelectorAll('label > video').forEach(vid => vid.removeAttribute("controls"));
+        document.querySelectorAll('label video:first-child').forEach(vid => vid.pause()); // pauses all videos
+        document.querySelectorAll('label video:first-child').forEach(vid => vid.removeAttribute("controls"));
         // document.querySelectorAll('.mobDev .info').forEach(info => info.css("display","none"));
         
         var radId = $('[name="'+section+'"][type="radio"]:checked').attr('id');
@@ -113,6 +113,7 @@ $("#mbNav").click(function () {
 
 vidControls("MBslider");
 vidControls("webSlider");
+vidControls("PSslider2");
 
 $(".bgShape").hover(function () {
     $(this).css(

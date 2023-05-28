@@ -95,6 +95,31 @@ body {
   padding: 3px 50px;
 }
 
+.home .homePara {
+  position: relative;
+  width: fit-content;
+}
+
+
+.home .homePara::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #1E53B3;
+  width: 0%;
+  content: "";
+  height: 4px;
+  transition: all 0.5s;
+  border-radius: 25px;
+  animation: underline 2s infinite;
+}
+
+/* .home .homePara:hover::after {
+  width: 80%;
+  color: #1E53B3;
+} */
 
 .primary-text {
   font-weight: bold;
@@ -382,6 +407,10 @@ input[type=radio] {
 #item-5:checked~.cards #ps-1,
 #item-6:checked~.cards #ps-2,
 
+#item-10:checked~.cards #ps-6,
+#item-11:checked~.cards #ps-4,
+#item-12:checked~.cards #ps-5,
+
 #item-7:checked~.cards #mb-3,
 #item-8:checked~.cards #mb-1,
 #item-9:checked~.cards #mb-2 {
@@ -397,6 +426,10 @@ input[type=radio] {
 #item-4:checked~.cards #ps-2,
 #item-5:checked~.cards #ps-3,
 #item-6:checked~.cards #ps-1,
+
+#item-10:checked~.cards #ps-5,
+#item-11:checked~.cards #ps-6,
+#item-12:checked~.cards #ps-4,
 
 #item-7:checked~.cards #mb-2,
 #item-8:checked~.cards #mb-3,
@@ -414,6 +447,10 @@ input[type=radio] {
 #item-5:checked~.cards #ps-2,
 #item-6:checked~.cards #ps-3,
 
+#item-10:checked~.cards #ps-4,
+#item-11:checked~.cards #ps-5,
+#item-12:checked~.cards #ps-6,
+
 #item-7:checked~.cards #mb-1,
 #item-8:checked~.cards #mb-2,
 #item-9:checked~.cards #mb-3 {
@@ -430,6 +467,10 @@ input[type=radio] {
 #item-5:checked~.cards #ps-1 .info,
 #item-6:checked~.cards #ps-2 .info,
 
+#item-10:checked~.cards #ps-6 .info,
+#item-11:checked~.cards #ps-4 .info,
+#item-12:checked~.cards #ps-5 .info,
+
 #item-7:checked~.cards #mb-3 .info,
 #item-8:checked~.cards #mb-1 .info,
 #item-9:checked~.cards #mb-2 .info {
@@ -443,6 +484,10 @@ input[type=radio] {
 #item-4:checked~.cards #ps-2 .info,
 #item-5:checked~.cards #ps-3 .info,
 #item-6:checked~.cards #ps-1 .info,
+
+#item-10:checked~.cards #ps-5 .info,
+#item-11:checked~.cards #ps-6 .info,
+#item-12:checked~.cards #ps-4 .info,
 
 #item-7:checked~.cards #mb-2 .info,
 #item-8:checked~.cards #mb-3 .info,
@@ -574,4 +619,9 @@ footer a {
   to {
     width: 130px;
   }
+}
+
+@keyframes underline {
+  0% { width: 0%; background-color: black;}
+  100% {width: 100%; background-color: transparent;}
 }
