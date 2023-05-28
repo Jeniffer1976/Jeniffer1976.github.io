@@ -14,19 +14,16 @@
 // }
 
 function scrollFunction() {
-    // curr = curr.toString();
     if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
-        // $("nav a").toggleClass("active").toggleClass("inactive");
-        // $("nav div a").replaceClass("active", "inactive");  
         $("nav a").removeClass("active");
-        // document.write(curr);
-
+        $("#topBtn").css(
+            "opacity", "1"
+        );
     } else {
-        // document.getElementById("#about").classList.add("active");
-        // // $("#about").attr("class","active");
-        // $(curr.insertAt(1,"#")).addClass("active");
         $('#' + curr.toString()).addClass("active");
-        // $('#about').addClass("active");
+        $("#topBtn").css(
+            "opacity", "0"
+        );
     }
 }
 
@@ -149,37 +146,3 @@ $(".contactBtn").mouseleave(function () {
         "color", "#9ED0E7"
     );
 });
-// $(".bgShape").hover(function(){
-//     $(this).css("background", "yellow");
-//     }, function(){
-//     $(this).css("background-color", "pink");
-//   });
-
-
-// $("[type='radio'][name='MBslider']").click(function() {
-//     document.querySelectorAll('label > video').forEach(vid => vid.pause()); // pauses all videos
-//     document.querySelectorAll('label > video').forEach(vid => vid.removeAttribute("controls"));
-//     // document.querySelectorAll('.mobDev .info').forEach(info => info.css("display","none"));
-    
-//     var radId = $("[name='MBslider'][type='radio']:checked").attr('id');
-//     var vid = document.querySelector("[for='"+radId+"'] video");
-//     // var info = document.querySelector("[for='"+radId+"'] .info");
-//     // info.css("display","block")
-
-//     vid.currentTime = '0';
-//     vid.play();
-//     vid.setAttribute("controls","");
-// });
-
-// $("[type='radio'][name='webSlider']").click(function() {
-//     document.querySelectorAll('label > video').forEach(vid => vid.pause()); // pauses all videos
-//     document.querySelectorAll('label > video').forEach(vid => vid.removeAttribute("controls"));
-
-//     var radId = $("[name='webSlider'][type='radio']:checked").attr('id');
-//     var vid = document.querySelector("[for='"+radId+"'] video");
-
-//     vid.currentTime = '0';
-//     vid.play();
-//     vid.setAttribute("controls","");
-// });
-

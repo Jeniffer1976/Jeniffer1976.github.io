@@ -301,6 +301,15 @@ textarea:valid~label {
   color: #D9E6EE;
 }
 
+#topBtn{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  /* z-index: 99; */
+}
+
 .divider {
   background-color: black;
   color: #F0A095;
