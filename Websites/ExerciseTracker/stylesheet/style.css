@@ -1,0 +1,282 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Raleway:wght@500&family=Ubuntu:ital@0;1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Ubuntu:wght@400;700&display=swap');
+
+body h1,
+h5 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.lvls {
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    padding: 0 3;
+}
+
+.myNav .nav-link {
+    color: #040038 !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #040038;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+    border-radius: 25px;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+    width: 80%;
+
+}
+
+.myNav {
+    transition: all 0.5s ease-in-out;
+
+}
+
+.navGrad {
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), #add9f8);
+
+}
+
+.navSolid {
+    background-color: #add9f8;
+}
+
+/* section1 */
+
+.s1 {
+    /* background: radial-gradient(circle, #d4fff6 0%, #7fffe3 43%); */
+    background: radial-gradient(circle, rgba(212, 255, 246, 1) 0%, rgba(142, 250, 226, 1) 43%, rgba(150, 242, 255, 1) 85%);
+}
+
+/* .s1 #fp-nav ul li:first-child {
+    display: none
+} */
+
+/* hide navigation to first page */
+/* #fp-nav ul li:first-child {
+    display: none
+} */
+
+input[type=text] {
+    outline: none;
+    background: none;
+    transition: 0.5s;
+    text-align: center;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input[type=text]::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#nameForm input[type=text] {
+    color: #040038;
+    border-bottom: 4px solid #040038;
+}
+
+#nameForm input[type=text]::placeholder {
+    color: #10e2bf;
+}
+
+#nameForm input[type=text]:focus {
+    border: 5px solid #8efae2;
+    border-bottom: 4px solid #040038;
+}
+
+
+
+
+.subBtn {
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #00d4ff, transparent) #3f51b5;
+    transition: 0.7s;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border: 1px double white;
+}
+
+.subBtn:hover {
+    background-color: #08f1abe5;
+    transform: scale(102%);
+}
+
+#infoTippy {
+    margin-top: 15vh;
+    color: grey;
+    text-align: center;
+}
+
+
+/* section2 */
+
+.banner {
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), #add9f8);
+    padding: 5;
+    margin-top: 12vh;
+}
+
+.lvls img {
+    width: 25vw;
+}
+
+.lvls .card-body {
+    height: 42vh;
+}
+
+.lvls button {
+    color: green;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), #8efae2);
+}
+
+.lvls .btn.btn-outline-info[disabled] {
+    color: grey;
+    /* background-image: url(../images/swim.png); */
+
+    filter: grayscale(50%) blur(.8px);
+}
+
+/* section3 */
+
+.progressBoard {
+    background-color: #e9fef9;
+    width: 3vw;
+    height: 63vh;
+    border-bottom: 4px solid #d4fff6;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #c5f0e6 inset;
+
+}
+
+#day,
+#km {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+    color: #e9fef9;
+    text-shadow: -1px 0 #ffbca3, 0 2px #ffbca3, 2px 0 #ffbca3, 0 -1px #ffbca3;
+}
+
+#day {
+    margin-left: -5vw;
+    margin-top: -2vh;
+}
+
+#km {
+    margin-left: -5vw;
+    margin-top: 35vh;
+}
+
+
+
+.num {
+    background-color: #ffbca3;
+    padding: 4 10;
+    margin-right: 2vw;
+    border-radius: 50px;
+    color: #e9fef9;
+}
+
+/* .progressBoard {
+    width: 5vw;
+    height: 70vh;
+} */
+
+.progressBoard input[type=text] {
+    color: #040038;
+    border: 3px solid #c5f0e6;
+    width: 20vw;
+    border-radius: 75px;
+}
+
+.progressBoard input[type=text]::placeholder {
+    color: #ffbca3;
+}
+
+.progressBoard input[type=text]:focus {
+    border: 3px ridge #8efae2;
+}
+
+#progressEnter {
+    width: 42.5vw;
+    height: 7vh;
+    align-items: center;
+    border-radius: 0px 0px 25px 25px;
+}
+
+#progressEnter:hover {
+    background-color: #08f1abe5;
+    transform: scale(100%);
+}
+
+.progressBtnVisiblity {
+    visibility: visible;
+    opacity: 100;
+    transition: opacity 0.3s ease-in;
+}
+
+.nextLvl {
+    visibility: visible;
+    /* display: block; */
+    opacity: 100;
+    transition: opacity 0.3s ease-in;
+
+}
+
+.hideBtn {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.alert {
+    background-color: #ffbca3;
+    color: white;
+    height: 8vh;
+    margin-top: 6;
+    font-family: 'Ubuntu', sans-serif;
+    width: 20vw;
+    display:none;
+
+}
+
+.closebtn {
+    margin-top: -6px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+.closebtn:hover {
+    color: #040038;
+
+}
