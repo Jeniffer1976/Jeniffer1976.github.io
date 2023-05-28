@@ -527,24 +527,30 @@ footer a {
 
 }
 
-.loadAnim{
+.loadCirc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadAnim {
   height: 200px;
   width: 200px;
   border: 10px dotted;
-  border-color: #003C57 #2B7B9F ;
+  border-color: #003C57 #2B7B9F;
   border-radius: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* animation: spin 15s infinite linear; */
+  animation: spin 15s infinite linear;
 
 }
 
 
 .loader img {
   width: 150px;
-  position:fixed;
-  /* animation: scale 1s infinite alternate ease-in-out; */
+  position: fixed;
+  animation: scale 1s infinite alternate ease-in-out;
 }
 
 .loader p {
@@ -564,6 +570,7 @@ footer a {
   from {
     width: 150px;
   }
+
   to {
     width: 130px;
   }
