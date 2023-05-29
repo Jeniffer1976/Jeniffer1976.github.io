@@ -40,26 +40,45 @@ function resetForm() {
 }
 
 function vidControls(section) {
-    $('[type="radio"][name="'+section+'"]').click(function() {
+    $('[type="radio"][name="' + section + '"]').click(function () {
+
         document.querySelectorAll('label video:first-child').forEach(vid => vid.pause()); // pauses all videos
         document.querySelectorAll('label video:first-child').forEach(vid => vid.removeAttribute("controls"));
-        // document.querySelectorAll('.mobDev .info').forEach(info => info.css("display","none"));
-        
-        var radId = $('[name="'+section+'"][type="radio"]:checked').attr('id');
-        var vid = document.querySelector("[for='"+radId+"'] video");
-        // var info = document.querySelector("[for='"+radId+"'] .info");
-        // info.css("display","block")
-    
-        vid.currentTime = '0';
-        vid.play();
-        vid.setAttribute("controls","");
+
+        var radId = $('[name="' + section + '"][type="radio"]:checked').attr('id');
+
+        var vid = document.querySelector("[for='" + radId + "'] video");
+
+        if (vid) {
+            vid.currentTime = '0';
+            vid.play();
+            vid.setAttribute("controls", "");
+        }
+
     });
 }
+
+
+function heightControls(section, sectionCont) {
+    // section = "PSslider2";
+    $('[type="radio"][name="' + section + '"]').click(function () {
+        var radId = $('[name="' + section + '"][type="radio"]:checked').attr('id');
+        var secHeight = $("[for='" + radId + "'] .card-content").height() + 80;
+        $("." + sectionCont).css(
+            "height", secHeight + "px"
+        );
+
+    });
+}
+
+// $('[type="radio"][id="item-11"]').click(function() {
+//     alert("test")
+// });
 
 function cardHover() {
     var cursor = document.querySelector(".cursor")
     cursor.style.boxShadow = "0 0 20px white, inset 0 0 20px black";
-   
+
 }
 
 function cardOut() {
@@ -67,9 +86,9 @@ function cardOut() {
     cursor.style.boxShadow = "0 0 20px white, inset 0 0 20px white";
 }
 
-$('.card video, .card img').each(function() {
-  $(this).attr('onmouseover','cardHover()') ;
-  $(this).attr('onmouseleave','cardOut()') ;
+$('.card video, .card img').each(function () {
+    $(this).attr('onmouseover', 'cardHover()');
+    $(this).attr('onmouseleave', 'cardOut()');
 });
 
 var curr = ""
@@ -78,7 +97,7 @@ $(document).ready(function () {
 });
 
 
-$(window).on('load',function(){
+$(window).on('load', function () {
     $('.loader').fadeOut(1000);
     $('.content').fadeIn(1000);
 });
@@ -111,6 +130,11 @@ $("#mbNav").click(function () {
 vidControls("MBslider");
 vidControls("webSlider");
 vidControls("PSslider2");
+
+heightControls("webSlider", "webDev");
+heightControls("PSslider", "photoshop");
+heightControls("PSslider2", "photoshop2");
+heightControls("MBslider", "mobDev");
 
 $(".bgShape").hover(function () {
     $(this).css(
