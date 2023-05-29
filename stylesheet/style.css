@@ -348,11 +348,12 @@ input[type=radio] {
   align-items: center;
 } */
 
-
-.photoshop, .photoshop2 {
-  height: 1120px;
+.photoshop {
+  height: 949px;
 }
-
+.photoshop2 {
+  height: 1164px;
+}
 .webDev {
   height: 1000px;
 }

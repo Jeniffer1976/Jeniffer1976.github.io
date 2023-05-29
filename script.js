@@ -60,7 +60,6 @@ function vidControls(section) {
 
 
 function heightControls(section, sectionCont) {
-    // section = "PSslider2";
     $('[type="radio"][name="' + section + '"]').click(function () {
         var radId = $('[name="' + section + '"][type="radio"]:checked').attr('id');
         var secHeight = $("[for='" + radId + "'] .card-content").height() + 80;
@@ -94,6 +93,7 @@ $('.card video, .card img').each(function () {
 var curr = ""
 $(document).ready(function () {
     curr = $("a.navList.active").attr('id'); // gets the current page's id
+    // $('[type="radio"]:checked').click();
 });
 
 
