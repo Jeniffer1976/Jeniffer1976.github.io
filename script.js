@@ -13,6 +13,8 @@
 //     );
 // }
 
+
+
 function scrollFunction() {
     if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
         $("nav a").removeClass("active");
@@ -170,3 +172,11 @@ $(".contactBtn").mouseleave(function () {
         "color", "#9ED0E7"
     );
 });
+
+
+tippy('#resume', {
+    content: 'Download my resume',
+    placement: "bottom",
+    arrow: false,
+});
+

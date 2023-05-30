@@ -88,7 +88,11 @@ body {
 
 .home button {
   color: #9ED0E7;
-  background-color: black;
+  /* background-color: black; */
+}
+.home form button {
+  background-color: #9ED0E7;
+  color: black;  
 }
 
 .home button h4 {
