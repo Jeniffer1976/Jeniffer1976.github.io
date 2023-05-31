@@ -12,7 +12,7 @@
 //         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
 //     );
 // }
-
+// $('video').attr('id','aVid');
 
 
 function scrollFunction() {
@@ -40,12 +40,33 @@ function resetForm() {
     $("#email").val("");
     $("#msg").val("");
 }
+let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+}
+let callback = (entries, observer) => {
+    entries.forEach(entry => {
+        if ((entry.target.id == "aVid") && $(entry.target).hasClass("vidActive")) {
+            if (entry.isIntersecting) {
+                entry.target.play();
+            } else {
+                entry.target.pause();
+            }
+
+        }
+    });
+}
+
+let observer = new IntersectionObserver(callback, options);
 
 function vidControls(section) {
     $('[type="radio"][name="' + section + '"]').click(function () {
 
         document.querySelectorAll('label video:first-child').forEach(vid => vid.pause()); // pauses all videos
         document.querySelectorAll('label video:first-child').forEach(vid => vid.removeAttribute("controls"));
+        document.querySelectorAll('label video:first-child').forEach(vid => $(vid).removeClass("vidActive"));
+        document.querySelectorAll('label video:first-child').forEach(vid => $(vid).attr('id', ''));
 
         var radId = $('[name="' + section + '"][type="radio"]:checked').attr('id');
 
@@ -55,6 +76,10 @@ function vidControls(section) {
             vid.currentTime = '0';
             vid.play();
             vid.setAttribute("controls", "");
+            $(vid).addClass("vidActive");
+            $(vid).attr('id', 'aVid');
+            observer.observe(document.querySelector("#aVid"));
+
         }
 
     });
@@ -129,8 +154,10 @@ $("#mbNav").click(function () {
     el.scrollIntoView(true);
 });
 
-vidControls("MBslider");
+observer.observe(document.querySelector("#aVid"));
+
 vidControls("webSlider");
+vidControls("MBslider");
 vidControls("PSslider2");
 
 heightControls("webSlider", "webDev");

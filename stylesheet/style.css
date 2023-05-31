@@ -90,16 +90,17 @@ body {
   color: #9ED0E7;
   /* background-color: black; */
 }
+
 .home form button {
   background-color: #9ED0E7;
-  color: black;  
+  color: black;
 }
 
 .home button h4 {
   padding: 3px 50px;
 }
 
-.home .homePara {
+/* .home .homePara {
   position: relative;
   width: fit-content;
 }
@@ -118,7 +119,7 @@ body {
   transition: all 0.5s;
   border-radius: 25px;
   animation: underline 2s infinite;
-}
+} */
 
 /* .home .homePara:hover::after {
   width: 80%;
@@ -305,7 +306,7 @@ textarea:valid~label {
   color: #D9E6EE;
 }
 
-#topBtn{
+#topBtn {
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -355,9 +356,11 @@ input[type=radio] {
 .photoshop {
   height: 949px;
 }
+
 .photoshop2 {
   height: 1164px;
 }
+
 .webDev {
   height: 1000px;
 }
@@ -586,7 +589,9 @@ footer a {
   overflow: hidden;
   background-color: #9ED0E7;
   /* z-index: 1; */
-  display: flex; justify-content: center; align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -618,7 +623,9 @@ footer a {
 
 .loader p {
   color: white;
-  display: flex; justify-content: center; align-items: center
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
 @keyframes spin {
@@ -639,7 +646,29 @@ footer a {
   }
 }
 
+.welcomeMsg h2 a {
+text-decoration: none;
+  background:
+    linear-gradient(to right,transparent, transparent),
+    /* linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));   */
+    /* linear-gradient(to right, rgba(255, 0, 0, 1), rgb(255, 94, 0), rgb(246, 255, 0), rgb(0, 200, 77), rgba(0, 100, 200, 1), rgb(200, 0, 190), rgb(100, 0, 200));  */
+    linear-gradient(to right, #F0A095, #EB9286, #E68377, #E17568, #DB6659, #D6584A, #D1493B);
+
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  animation: underline 2s infinite alternate;
+  line-height: 2.5ch;
+  /* animation-duration: 1s; */
+
+}
+
 @keyframes underline {
-  0% { width: 0%; background-color: black;}
-  100% {width: 100%; background-color: transparent;}
+
+  /* 0% { width: 0%; background-color: black;} */
+  100% {
+    background-size: 0 0.1em, 100% 0.1em;
+
+  }
 }
