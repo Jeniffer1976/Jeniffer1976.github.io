@@ -43,7 +43,7 @@ function resetForm() {
 let options = {
     root: null,
     rootMargin: '0px',
-    threshold: 1.0
+    threshold: .6
 }
 let callback = (entries, observer) => {
     entries.forEach(entry => {
@@ -206,4 +206,3 @@ tippy('#resume', {
     placement: "bottom",
     arrow: false,
 });
-
